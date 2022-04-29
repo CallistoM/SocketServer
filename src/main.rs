@@ -173,7 +173,7 @@ fn handle_client(mut stream: TcpStream, _log: Logger) {
                     let mut vector = Vec::new();
                     let mut char_byte = 0;
 
-                    for d in msg.split("\n") {
+                    for d in msg.split('\n') {
                         if char_byte == 1 {
                             vector.push(d);
                         }
